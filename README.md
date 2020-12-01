@@ -1,2 +1,2 @@
 # traiffic-poc
-Read properties from common config properties files
+Traffic POC project
