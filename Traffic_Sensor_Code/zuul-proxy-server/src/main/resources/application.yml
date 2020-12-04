@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    sensor-process-data:
+      path: /traffic/**
+      url: http://localhost:8151/
+server:
+  port: 9200
+spring:
+  application:
+    name: zuul-proxy-server

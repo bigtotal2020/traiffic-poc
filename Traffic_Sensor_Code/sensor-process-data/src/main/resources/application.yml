@@ -1,0 +1,12 @@
+---
+server:
+  port: 8151
+spring:
+  application:
+    name: sensor-process-data
+  profiles:
+    active: primary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

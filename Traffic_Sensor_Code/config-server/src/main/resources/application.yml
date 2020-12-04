@@ -1,0 +1,14 @@
+---
+spring:
+  profiles: 
+    active: primary
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bigtotal2020/traiffic-poc
+          searchPaths: ConfigData
+        native:
+          searchLocations: classpath:offline-repository/
+server:
+  port: 9011

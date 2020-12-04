@@ -1,0 +1,17 @@
+---
+server:
+  port: 8121
+spring:
+  application:
+    name: fetch-vehicle-data-govt
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: traffic_poc
+  profiles:
+    active: primary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

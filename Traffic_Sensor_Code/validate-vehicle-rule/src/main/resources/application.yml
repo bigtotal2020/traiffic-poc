@@ -1,0 +1,35 @@
+---
+server:
+  port: 8131
+spring:
+  application:
+    name: validate-vehicle-rule
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: traffic_poc
+  profiles:
+    active: primary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+      
+---
+server:
+  port: 8132
+spring:
+  application:
+    name: validate-vehicle-rule
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: traffic_poc
+  profiles:
+    active: primary
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

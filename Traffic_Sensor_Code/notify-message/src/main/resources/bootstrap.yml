@@ -1,0 +1,30 @@
+---
+spring:
+  profiles: 
+    active: dev
+  application:
+    name: message-server
+  cloud:
+    config:
+      uri: http://localhost:9011
+server:
+  port: 8101
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/  
+      
+---
+spring:
+  profiles: prod
+  application:
+    name: message-server
+  cloud:
+    config:
+      uri: http://localhost:9011
+server:
+  port: 8102
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/  
